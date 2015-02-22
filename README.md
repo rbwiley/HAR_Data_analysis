@@ -1,4 +1,4 @@
-# HAR_Data_analysis
+#README.md
 ##Get & Clean Data Project
 ###for Coursera: getdata-011 Getting and Cleaning Data
 ###Johns Hopkins University
@@ -31,6 +31,7 @@
 +   names(x) in ~10 label batches to rename (known bug in rename() prevented its use)  
 
 5. Save current, now tidy table to .csv file (traintest.csv) for backup
-6. Add subject attribute to table for final tidy table (tidy_tt)
-+   
+6. Copy testtrain table to final tidy table (tidy_tt) for commit  
 
+7. 
++   

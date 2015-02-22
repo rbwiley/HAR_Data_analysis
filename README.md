@@ -33,5 +33,7 @@
 5. Save current, now tidy table to .csv file (traintest.csv) for backup  
 6. Copy testtrain table to final tidy table (tidy_tt) for commit & write.table  
 
-7. 
+7. Run mean of all variables (incl std), by Activity and Subject (and train, test)
+*   variable names ending in "MEAN" for means, "N" for count
+
 *   

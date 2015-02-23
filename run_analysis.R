@@ -91,7 +91,11 @@ write.table(traintest, file = ".\\tidy_tt.txt", row.names = FALSE)
 
 ## run mean of all variables (incl std), by Activity and Subject (and train, test)
 ##variable names ending in "MEAN" for means, "N" for count
-tidy_means <- mean(group_by()
-mean(tidy_tt[,4:9])
-
-
+#tidy_means <- mean(group_by(tidy_tt, as.factor(Subject), Activity))
+#g_tidy <- group_by(colMeans(tidy_tt), Activity)
+tidy_means <- colMeans(g_tidy[,4:89])
+tidy_means <- data.table(c( colMeans(g_tidy[,4:89]), g_tidy$Subject))
+#tidy_means$Subject <- Subject
+#dim(tidy_means)
+#dim(g_tidy)
+tidy_means

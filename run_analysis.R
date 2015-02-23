@@ -95,6 +95,7 @@ write.table(traintest, file = ".\\tidy_tt.txt", row.names = FALSE)
 #g_tidy <- group_by(colMeans(tidy_tt), Activity)
 tidy_means <- colMeans(g_tidy[,4:89])
 tidy_means <- data.table(c( colMeans(g_tidy[,4:89]), g_tidy$Subject))
+write.table(tidy_means, file= ".\\tidy_means.txt", row.names = FALSE)
 #tidy_means$Subject <- Subject
 #dim(tidy_means)
 #dim(g_tidy)
